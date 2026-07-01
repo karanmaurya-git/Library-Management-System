@@ -1,4 +1,4 @@
-# 📚 Stacks --- Library Management System
+# 📚 Stacks - Library Management System
 
 A full-stack library management system built for a school or college
 library: book catalog, member accounts, borrowing with due dates,
@@ -6,7 +6,7 @@ automatic overdue fines, a reservation queue, multi-admin access
 control, and email notifications.
 
 -   **Backend:** Node.js + Express + SQLite (uses Node's built-in
-    `node:sqlite` --- nothing to compile, no external database service
+    `node:sqlite` - nothing to compile, no external database service
     required)
 -   **Frontend:** React + Vite
 
@@ -31,30 +31,48 @@ control, and email notifications.
 ------------------------------------------------------------------------
 
 ## ✨ Features
+```
+**Librarian (admin) view** 
 
-**Librarian (admin) view** - 📊 Dashboard --- live stats (titles/copies,
+📊 Dashboard --- live stats (titles/copies,
 books issued, overdue count, outstanding fines), most-borrowed titles,
-recent activity - 📖 Catalog --- add/edit/delete books, search & filter
-by category, export to CSV - 👥 Members --- add/remove student & faculty
-accounts, export to CSV - 🔁 Issue & Return --- issue a book, mark
-returns, renew loans, delete a record, automatic fine calculation,
-export to CSV - 🔖 Reservations --- full waitlist queue for every book -
-🧾 Fines --- view unpaid balances, mark as paid, export to CSV - 🛡️
-Admins --- add or remove other librarian accounts, with built-in
-safeguards - ✉️ Trigger due-soon / overdue reminder emails on demand
+recent activity 
 
-**Member (student / faculty) view** - 📝 Self-registration --- create an
-account without waiting for a librarian - 🔍 Browse and search the
-catalog - 📌 Reserve a book that's fully checked out (joins a queue,
-notified by email when ready) - 📚 My Loans --- borrowing history, due
-dates, renew a loan, view fines - 🔖 My Reservations --- track queue
-position, cancel a reservation
+📖 Catalog --- add/edit/delete books, search & filter
+by category, export to CSV 
+
+👥 Members --- add/remove student & faculty
+accounts, export to CSV 
+
+🔁 Issue & Return - issue a book, mark
+returns, renew loans, delete a record, automatic fine calculation,
+export to CSV 
+
+🔖 Reservations - full waitlist queue for every book 
+
+🧾 Fines - view unpaid balances, mark as paid, export to CSV 
+
+🛡️ Admins - add or remove other librarian accounts, with built-in
+safeguards 
+
+✉️ Trigger due-soon / overdue reminder emails on demand
+
+**Member (student / faculty) view**
+📝 Self-registration - create an account without waiting for a librarian - 🔍 Browse and search the
+catalog 
+
+📌 Reserve a book that's fully checked out (joins a queue,
+notified by email when ready) 
+
+📚 My Loans - borrowing history, duedates, renew a loan, view fines 
+
+🔖 My Reservations - track queue position, cancel a reservation
 
 **Interface** - Icon-based navigation (lucide-react), skeleton loading
 states, contextual empty states - Custom "card catalog" visual identity
 --- index-card panels, a rotated due-date stamp for loans - Fully
 responsive --- sidebar collapses into a horizontal top bar on mobile
-
+```
 ------------------------------------------------------------------------
 
 ## 🛠️ Tech stack
@@ -232,7 +250,7 @@ be added by an existing admin from the **Admins** tab.
 Copy `backend/.env.example` to `backend/.env` to customize:
 
 ``` env
-PORT=4000
+PORT=Your_port_here
 JWT_SECRET= Your_jwt_secret_here
 
 # Optional — email notifications. Leave blank to log emails to the console instead.
