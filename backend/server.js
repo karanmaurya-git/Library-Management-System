@@ -20,7 +20,7 @@ app.use(express.json());
 
 // ✅ Root route for Render
 app.get('/', (req, res) => {
-  res.send('📚 Library Management API is running successfully!');
+  res.send('📚 Library Management System API is running successfully!');
 });
 
 // API Routes
@@ -36,7 +36,7 @@ app.use('/api/dashboard', dashboardRoutes);
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
-    message: 'Library Management API is healthy'
+    message: 'Library Management System API is healthy'
   });
 });
 
@@ -51,7 +51,7 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
-  console.log(`🚀 Library API running on http://localhost:${PORT}`);
+  console.log(`🚀 Library Management System API running on http://localhost:${PORT}`);
 
   // Run reminder jobs on startup and every 24 hours
   const runReminderCheck = () => {
